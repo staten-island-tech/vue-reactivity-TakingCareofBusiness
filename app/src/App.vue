@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <div>
+    <title class="text-3xl">At Home Aquascape</title>
+  </div>
 </template>
 
 <script setup></script>
