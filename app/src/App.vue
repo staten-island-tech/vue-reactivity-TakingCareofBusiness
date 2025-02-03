@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <title class="text-3xl">At Home Aquascape</title>
+  <div class="wrapper">
+    <h1 class="text-6xl bg-blue-500 drop-shadow-xl">At Home Aquascape</h1>
   </div>
 </template>
 
