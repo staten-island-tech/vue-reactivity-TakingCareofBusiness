@@ -1,7 +1,7 @@
-<template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
-</template>
+<template><StartPage /></template>
 
-<style></style>
+<script setup>
+import StartPage from '../components/StartPage.vue'
+</script>
+
+<style scoped></style>
