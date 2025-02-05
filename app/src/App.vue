@@ -1,9 +1,14 @@
 <template>
   <div class="wrapper">
-    <h1 class="text-6xl bg-blue-500">At Home Aquascape</h1>
+    <RouterView />
+    <HeaderTitle />
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
+import StartView from './views/StartView.vue'
+import HeaderTitle from './components/HeaderTitle.vue'
+</script>
 
 <style scoped></style>
