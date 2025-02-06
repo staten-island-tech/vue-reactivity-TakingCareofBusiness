@@ -1,13 +1,17 @@
 <template>
   <div class="wrapper">
-    <RouterView />
     <HeaderTitle />
+
+    <nav>
+      <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/about">about</RouterLink>
+    </nav>
+    <RouterView />
   </div>
 </template>
 
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import StartView from './views/StartView.vue'
 import HeaderTitle from './components/HeaderTitle.vue'
 </script>
 

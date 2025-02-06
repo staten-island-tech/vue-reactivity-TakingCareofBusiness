@@ -1,7 +1,10 @@
-<template><StartPage /></template>
+<template>
+  <main>
+    <button class="w-2/5 h-20 bg-black"></button>
+    <h1>It works!</h1>
+  </main>
+</template>
 
-<script setup>
-import StartPage from '../components/StartPage.vue'
-</script>
+<script setup></script>
 
 <style scoped></style>
