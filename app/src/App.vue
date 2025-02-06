@@ -1,7 +1,6 @@
 <template>
   <div class="wrapper">
     <HeaderTitle />
-
     <nav>
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/about">about</RouterLink>
