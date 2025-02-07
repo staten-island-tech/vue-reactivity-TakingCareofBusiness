@@ -1,5 +1,5 @@
 <template>
-  <main></main>
+  <div><image href="../../public/tank.png" /></div>
 </template>
 
 <script setup></script>
