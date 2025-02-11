@@ -15,4 +15,7 @@ const fishList = [
   { name: 'Twintail Halfmoon Male Betta Fish', image: '/TwintailHalfmoonMaleBettaFish.png' },
   { name: 'Halfmoon Male Betta Fish', image: '/HalfmoonMaleBettaFish.png' },
   { name: 'Dragon Scale Male Betta Fish', image: '/DragonScaleMaleBettaFish.png' },
+  {name: 'Crowntail Male Betta Fish', image: '/CrowntailMaleBettaFish.png'},
+  {name: 'Female Betta Fish', image: '/FemaleBettaFish.png'},
+  {name: 'Male Betta Fish', image: '/MaleBettaFish.png'},
 ]
