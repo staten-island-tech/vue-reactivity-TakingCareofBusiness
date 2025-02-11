@@ -18,4 +18,7 @@ const fishList = [
   {name: 'Crowntail Male Betta Fish', image: '/CrowntailMaleBettaFish.png'},
   {name: 'Female Betta Fish', image: '/FemaleBettaFish.png'},
   {name: 'Male Betta Fish', image: '/MaleBettaFish.png'},
+  {name: 'Comet Goldfish', image: '/CometGoldfish.png'},
+  {name: 'Koi Male Betta', image: '/KoiMaleBetta.png'},
+  {name: 'Samurai Male Betta', image: '/SamuraiMaleBetta.png'}
 ]
