@@ -2,6 +2,8 @@
   <div></div>
 </template>
 
-<script setup></script>
+<script setup>
+import { fishList } from '@/fish.js'
+</script>
 
 <style scoped></style>
