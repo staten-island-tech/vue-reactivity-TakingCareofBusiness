@@ -12,8 +12,9 @@ import { fishList } from '@/fish.js'
 import FishCards from '../components/FishCards.vue'
 const occupantList = reactive({})
 function addToTank(data) {
-  console.log(data)
+  occupantList.push(data)
 }
+console.log(occupantList)
 </script>
 
 <style scoped></style>
