@@ -1,9 +1,7 @@
 <template>
   <div>
-    <div>
-      <TankImage>
-        <TankedFish v-for="item in screenOccupants" :key="item.name" :item="item" />
-      </TankImage>
+    <div class="bg-[url('/tank.png')] w-1/3 h-1/5">
+      <TankedFish v-for="item in screenOccupants" :key="item.name" :item="item" />
     </div>
     <div>
       <FishCards v-for="item in fishList" :key="item.name" :item="item"
@@ -16,7 +14,6 @@
 <script setup>
 import { fishList } from '@/fish.js'
 import FishCards from '../components/FishCards.vue'
-import TankImage from '../components/TankImage.vue'
 import { ref, reactive } from 'vue'
 const screenOccupants = reactive([])
 function addToTank(data) {
