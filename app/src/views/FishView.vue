@@ -15,7 +15,7 @@
       </button>
     </div>
     <div class="flex flex-wrap gap-4 mt-4 justify-center">
-      <FishCards v-for="item in fishList" :key="item.name" :item="item" class="flex-none w-1/5">
+      <FishCards v-for="item in fishList" :key="item.name" :item="item" class="flex-none w-1/6">
         <button class="bg-blue-500 text-white rounded-lg" @click="addToTank(item)">
           Add To Bowl
         </button>
