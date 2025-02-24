@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="relative">
-      <img class="relative w-full h-1/4" src="/tank.png" alt="Fish Tank" />
+      <img class="relative w-full" src="/tank.png" alt="Fish Tank" />
       <TankedFish
         v-for="(item, index) in screenOccupants"
         :key="index"
