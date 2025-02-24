@@ -9,9 +9,16 @@
         :style="getPositionStyle(item)"
       />
     </div>
+    <div class="flex justify-center mt-4">
+      <button @click="removeAllFish" class="w-1/6 px-4 py-2 bg-red-500 text-white rounded-lg">
+        <img class="w-full" src="/FishNet.png" alt="Fish Net" />
+      </button>
+    </div>
     <div class="flex flex-wrap gap-4 mt-4 justify-center">
       <FishCards v-for="item in fishList" :key="item.name" :item="item" class="flex-none w-1/5">
-        <button @click="addToTank(item)">Add To Bowl</button>
+        <button class="bg-blue-500 text-white rounded-lg" @click="addToTank(item)">
+          Add To Bowl
+        </button>
       </FishCards>
     </div>
   </div>
@@ -36,6 +43,9 @@ function addToTank(data) {
   }
   screenOccupants.push(newFish)
   console.log(screenOccupants)
+}
+function removeAllFish() {
+  screenOccupants.length = 0
 }
 function getPositionStyle(item) {
   return {
