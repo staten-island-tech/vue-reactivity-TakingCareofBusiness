@@ -1,13 +1,7 @@
 <template>
   <div>
-    <div
-      class="relative bg-[url('/tank.png')] w-1/2 h-1/4 bg-no-repeat bg-cover"
-      :style="{
-        backgroundImage: 'url(/tank.png)', // Dynamically set the background image
-        backgroundSize: 'cover', // Ensure the background image covers the entire div
-        backgroundPosition: 'center', // Center the background image
-      }"
-    >
+    <div class="relative">
+      <img class="relative w-full h-1/4" src="/tank.png" alt="Fish Tank" />
       <TankedFish
         v-for="(item, index) in screenOccupants"
         :key="index"
@@ -15,9 +9,9 @@
         :style="getPositionStyle(item)"
       />
     </div>
-    <div>
-      <FishCards v-for="item in fishList" :key="item.name" :item="item">
-        <button @click="addToTank(item)">Click Me!</button>
+    <div class="flex flex-wrap gap-4 mt-4 justify-center">
+      <FishCards v-for="item in fishList" :key="item.name" :item="item" class="flex-none w-1/5">
+        <button @click="addToTank(item)">Add To Bowl</button>
       </FishCards>
     </div>
   </div>
@@ -35,8 +29,8 @@ function addToTank(data) {
   const newFish = {
     ...data,
     position: {
-      top: `${Math.random() * 100}%`,
-      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * (65 - 40) + 40}%`,
+      left: `${Math.random() * (80 - 20) + 20}%`,
     },
     size: Math.floor(Math.random() * 50) + 30,
   }
