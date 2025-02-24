@@ -3,5 +3,6 @@
 </template>
 
 <script setup>
-const occupantList = reactive({})
+import { ref, reactive } from 'vue'
+const occupantList = reactive([])
 </script>

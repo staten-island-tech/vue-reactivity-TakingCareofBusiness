@@ -2,7 +2,7 @@
   <div>
     <div>
       <TankImage>
-        <TankedFish v-for="item in occupantList" :key="item.name" :item="item" />
+        <TankedFish v-for="item in screenOccupants" :key="item.name" :item="item" />
       </TankImage>
     </div>
     <div>
@@ -16,11 +16,12 @@
 <script setup>
 import { fishList } from '@/fish.js'
 import FishCards from '../components/FishCards.vue'
-import { occupantList } from '@/TankList.js'
 import TankImage from '../components/TankImage.vue'
+import { ref, reactive } from 'vue'
+const screenOccupants = reactive([])
 function addToTank(data) {
-  occupantList.push(data)
-  console.log(occupantList)
+  screenOccupants.push(data)
+  console.log(screenOccupants)
 }
 </script>
 
