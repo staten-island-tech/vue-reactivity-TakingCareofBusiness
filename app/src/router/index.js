@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import DecorationView from '../views/DecorationView.vue'
 import FishView from '../views/FishView.vue'
 
 const router = createRouter({
