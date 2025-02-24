@@ -30,7 +30,7 @@ function addToTank(data) {
     ...data,
     position: {
       top: `${Math.random() * (65 - 40) + 40}%`,
-      left: `${Math.random() * (80 - 20) + 20}%`,
+      left: `${Math.random() * (80 - 15) + 15}%`,
     },
     size: Math.floor(Math.random() * 50) + 30,
   }
