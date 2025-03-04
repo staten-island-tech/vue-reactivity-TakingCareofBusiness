@@ -39,7 +39,7 @@ function addToTank(data) {
       top: `${Math.random() * (65 - 40) + 40}%`,
       left: `${Math.random() * (80 - 15) + 15}%`,
     },
-    size: Math.floor(Math.random() * 50) + 30,
+    size: Math.floor(Math.random() * 75) + 50,
   }
   screenOccupants.push(newFish)
   console.log(screenOccupants)
@@ -58,8 +58,4 @@ function getPositionStyle(item) {
 }
 </script>
 
-<style>
-div {
-  display: block;
-}
-</style>
+<style></style>
